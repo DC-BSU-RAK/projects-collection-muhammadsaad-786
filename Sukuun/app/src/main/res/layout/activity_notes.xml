@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C3333"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#E7F6F2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="serif"
+            android:text="Gratitude Log"
+            android:textColor="#E7F6F2"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/etGratitude"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#3E4E50"
+        android:gravity="top"
+        android:hint="What are you grateful for?"
+        android:padding="15dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#A5C9CA" />
+
+    <Button
+        android:id="@+id/btnSaveNote"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#A5C9CA"
+        android:text="Save to Path"
+        android:textColor="#2C3333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Your Reflections"
+        android:textColor="#A5C9CA"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#1A2222"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvNoteHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="4dp"
+            android:textColor="#E7F6F2"
+            android:textSize="15sp" />
+    </ScrollView>
+
+</LinearLayout>
